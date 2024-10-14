@@ -63,6 +63,14 @@ environment {
             }
         }
     }
+
+        stage("Deploy"){
+            steps {
+                script {
+                    sh "./deploy.sh"
+                }
+            }
+        }
 //        stage('SonarQube analysis') {
 //    environment {
 //      scannerHome = tool 'sonarqube-scanner'
