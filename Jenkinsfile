@@ -1,6 +1,6 @@
 def registry = 'https://idkdevops.jfrog.io/'
 def imageName = 'idkdevops.jfrog.io/idk-docker-local/idk'
-def version   = '2.1.2'
+def version   = '2.1.3'
 pipeline {
     agent {
         node {
