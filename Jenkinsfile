@@ -64,13 +64,15 @@ environment {
         }
     }
 
-        stage("Deploy"){
+        stage(" Deploy ") {
             steps {
-                script {
-                    sh "./deploy.sh"
-                }
-            }
-        }
+            script {
+            echo '<--------------- Helm Deploy Started --------------->'
+            sh 'helm install ttrend ttrend1-0.1.0.tgz'
+            echo '<--------------- Helm deploy Ends --------------->'
+         }
+       }
+     }
 //        stage('SonarQube analysis') {
 //    environment {
 //      scannerHome = tool 'sonarqube-scanner'
