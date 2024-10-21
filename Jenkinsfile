@@ -68,7 +68,7 @@ environment {
             steps {
             script {
             echo '<--------------- Helm Deploy Started --------------->'
-            sh 'helm install ttrend ttrend1-0.1.0.tgz'
+            sh 'sudo helm install ttrend ttrend1-0.1.0.tgz'
             echo '<--------------- Helm deploy Ends --------------->'
          }
        }
